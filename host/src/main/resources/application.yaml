@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+openai:
+  api-key: sdf833.sdfg0
+  endpoint: https://wingman.nimbusplane.io/v1
+  completions-path: /chat/completions
+  model: wingman
+  temperature: 0.2
+  max-tokens: 16384
+  frequency-penalty: 0.2
+  presence-penalty: 0.1
+  top-p: 0.95
+
+spring:
+  application:
+    name: mcp
+  ai:
+    mcp:
+      client:
+        streamable-http:
+          connections:
+            my-mcp-weather-server:
+              url: "http://localhost:8080"
+
