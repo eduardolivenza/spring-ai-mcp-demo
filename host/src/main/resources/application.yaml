@@ -2,8 +2,8 @@ server:
   port: 8081
 
 openai:
-  api-key: sdf833.sdfg0
-  endpoint: https://wingman.nimbusplane.io/v1
+  api-key: <key>
+  endpoint: <url>
   completions-path: /chat/completions
   model: wingman
   temperature: 0.2
